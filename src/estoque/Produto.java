@@ -12,11 +12,11 @@ public class Produto {
     Scanner sc = new Scanner(System.in);
 
     Product produto = new Product();
-    System.out.println("Name: ");
+    System.out.print("Name: ");
     produto.name = sc.next();
-    System.out.println("Quantity: ");
+    System.out.print("Price: ");
     produto.price = sc.nextDouble();
-    System.out.println("Quantity in stock");
+    System.out.print("Quantity in stock: ");
     produto.quantity = sc.nextInt();
 
     System.out.println("Product data: " + produto.name + ", $" + produto.price + ", " + produto.quantity + " units, ");
@@ -34,6 +34,6 @@ public class Produto {
 
     produto.removeProducts(sc.nextInt());
     System.out.println("Updated data: " + produto.name + ", $" + produto.price + ", " + produto.quantity + " units, ");
-
+    sc.close();
  }
 }
